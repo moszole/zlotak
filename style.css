@@ -1,0 +1,101 @@
+/* Own stylesheet: no framework, no web fonts, mobile-first (readable from 320 px).
+   Colour pairs are checked for WCAG contrast >= 4.5:1 by tests/test_seo.py. */
+/* Palette (plan 22.4), then semantic roles. Dark scheme only swaps roles. */
+:root {
+  --brand-green: #2e7d32;
+  --brand-green-dark: #1b5e20;
+  --coin-gold: #ffc83d;
+  --coin-ink: #5a3e00;
+  --cream: #fff6e5;
+  --paper: #fffbf2;
+  --ink: #1b1b1b;
+  --muted-ink: #444444;
+  --white: #ffffff;
+  --dark-surface: #121a13;
+  --dark-text: #f1f1f1;
+  --dark-muted: #c4c4c4;
+  --dark-link: #a5d6a7;
+  --dark-border: #4a5a4b;
+
+  --text: var(--ink);
+  --bg: var(--paper);
+  --link: var(--brand-green);
+  --muted: var(--muted-ink);
+  --banner-text: var(--white);
+  --banner-bg: var(--brand-green);
+  --header-text: var(--cream);
+  --header-bg: var(--brand-green-dark);
+  --border: #cccccc;
+  --focus: var(--brand-green-dark);
+  --focus-on-banner: var(--white);
+  --focus-on-header: var(--coin-gold);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--dark-text);
+    --bg: var(--dark-surface);
+    --link: var(--dark-link);
+    --muted: var(--dark-muted);
+    --banner-bg: var(--brand-green-dark);
+    --border: var(--dark-border);
+    --focus: var(--coin-gold);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  overflow-wrap: break-word;
+}
+
+a { color: var(--link); }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.app-banner a:focus-visible { outline-color: var(--focus-on-banner); }
+
+.site-bar { background: var(--header-bg); color: var(--header-text); }
+.site-bar a { color: var(--header-text); }
+.site-bar a:focus-visible { outline-color: var(--focus-on-header); }
+.site-bar .brand { margin: 0; font-size: 1.25rem; font-weight: 700; }
+.site-bar .brand a { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; min-height: 2.75rem; }
+.coin-mark { flex: none; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 0.5rem; top: 0.5rem; background: var(--bg); padding: 0.25rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+#planner-form select, #planner-form button, #planner-list button { min-height: 2.75rem; font: inherit; }
+
+header, main, footer { max-width: 60rem; margin: 0 auto; padding: 0.75rem 1rem; }
+
+h1 { font-size: 1.5rem; line-height: 1.25; }
+h2 { font-size: 1.25rem; line-height: 1.3; }
+
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; padding: 0; margin: 0; }
+nav a { display: inline-block; padding: 0.5rem 0; min-height: 2.75rem; }
+#breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; }
+#breadcrumb li + li::before { content: "› "; color: var(--muted); }
+
+.offer-price { font-weight: 700; }
+.offer-meta { color: var(--muted); }
+.name-flag { font-size: 0.75rem; font-weight: 700; color: var(--muted); border: 1px solid var(--muted); border-radius: 4px; padding: 0 0.25rem; }
+.product-image { display: block; margin: 0 0 0.5rem; max-width: 96px; }
+figure.product-image img { display: block; width: 96px; height: auto; border-radius: 8px; }
+figure.product-image figcaption { font-size: 0.8rem; }
+
+.app-banner { background: var(--banner-bg); color: var(--banner-text); }
+.app-banner p { max-width: 60rem; margin: 0 auto; padding: 0.75rem 1rem; }
+.app-banner a { color: var(--banner-text); font-weight: 700; }
+
+footer { border-top: 1px solid var(--border); color: var(--muted); }
+
+@media (min-width: 40rem) {
+  h1 { font-size: 2rem; }
+  header, main, footer { padding: 1rem 1.5rem; }
+}

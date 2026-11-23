@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plánovač nákupu — Zloťák</title>
+<meta name="description" content="Nákupní seznam v prohlížeči: nejlepší aktuální polská akční cena ke každé položce. Seznam zůstává jen ve vašem zařízení.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://moszole.github.io/zlotak/cs/planovac/">
+<link rel="icon" href="https://moszole.github.io/zlotak/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://moszole.github.io/zlotak/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://moszole.github.io/zlotak/apple-touch-icon.png" sizes="180x180">
+<link rel="stylesheet" href="https://moszole.github.io/zlotak/style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<div class="site-bar">
+<header>
+<p class="brand"><a href="https://moszole.github.io/zlotak/cs/"><svg class="coin-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="var(--coin-gold)" stroke="var(--coin-ink)" stroke-width="2"/><circle cx="16" cy="16" r="10" fill="none" stroke="var(--coin-ink)" stroke-width="2"/></svg><span>Zloťák</span></a></p>
+<nav aria-label="Hlavní navigace">
+<ul>
+<li><a href="https://moszole.github.io/zlotak/cs/">Úvod</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/#retailers">Obchodní řetězce</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/obchody/">Obchody</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/kategorie/">Kategorie</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/skupiny/">Skupiny zboží</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/mesta/">Města</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/kalendar/">Neobchodní dny</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/karty/">Věrnostní karty</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/prakticke-informace/">Praktické informace</a></li>
+
+<li><a href="https://moszole.github.io/zlotak/cs/kosik-tydne/">Košík týdne</a></li>
+
+<li><a href="https://moszole.github.io/zlotak/cs/planovac/">Plánovač</a></li>
+</ul>
+</nav>
+</header>
+</div>
+<main id="obsah">
+
+<nav aria-label="Drobečková navigace" id="breadcrumb">
+<ol>
+
+<li><a href="https://moszole.github.io/zlotak/cs/">Úvod</a></li>
+
+<li><span aria-current="page">Plánovač</span></li>
+
+</ol>
+</nav>
+
+
+<p class="data-date">Stav dat: <time datetime="2026-11-23">23. 11. 2026</time></p>
+
+
+<h1>Plánovač nákupu</h1>
+<p>Vyberte druhy zboží. U každého uvidíte nejnižší akční cenu platnou v den dat a řetězec, který ji nabízí. Cenu, kterou neznáme, neodhadujeme.</p>
+<noscript><p>Plánovač potřebuje zapnutý JavaScript.</p></noscript>
+<form id="planner-form" aria-labelledby="planner-add-h">
+<h2 id="planner-add-h">Druh zboží</h2>
+<p>
+<label for="planner-group">Druh zboží</label>
+<select id="planner-group" name="group">
+<option value="">Vyberte druh zboží</option>
+</select>
+<button type="submit" id="planner-add">Přidat do seznamu</button>
+</p>
+</form>
+<section id="planner-list" aria-labelledby="planner-list-h">
+<h2 id="planner-list-h">Váš seznam</h2>
+<p id="planner-empty">Seznam je prázdný.</p>
+<table id="planner-table" hidden>
+<caption>Váš seznam</caption>
+<thead>
+<tr><th scope="col">Druh zboží</th><th scope="col">Nejnižší akční cena</th><th scope="col">Řetězec</th><th scope="col"><span class="visually-hidden">Odebrat</span></th></tr>
+</thead>
+<tbody id="planner-rows"></tbody>
+</table>
+<p id="planner-summary" role="status" aria-live="polite"></p>
+<p id="planner-total" role="status" aria-live="polite"></p>
+<p><button type="button" id="planner-clear" hidden>Vymazat seznam</button></p>
+<p id="planner-warning" role="alert"></p>
+<p><small>Seznam se ukládá jen v tomto prohlížeči (localStorage) a nikam se neodesílá.</small></p>
+</section>
+<script type="application/json" id="planner-data">{"date": "2026-11-23", "edition": "cs", "groups": [{"id": 11, "name": "Banány"}, {"id": 13, "name": "Hrušky"}, {"id": 3, "name": "Jogurt"}, {"id": 35, "name": "Káva"}, {"id": 26, "name": "Klobása"}, {"id": 22, "name": "Kuře"}, {"id": 29, "name": "Limonáda"}, {"id": 24, "name": "Mleté maso"}, {"id": 1, "name": "Mléko"}, {"id": 30, "name": "Pivo"}, {"id": 12, "name": "Pomeranče"}, {"id": 14, "name": "Rajčata"}, {"id": 25, "name": "Šunka"}], "offers": [{"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 14, "id": 17, "price": 9.99, "product_id": 17, "regular_price": null, "retailer_id": 4, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-28"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 35, "id": 33, "price": 99.9, "product_id": 33, "regular_price": null, "retailer_id": 4, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-28"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 197, "price": 2.99, "product_id": 197, "regular_price": null, "retailer_id": 1, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 22, "id": 451, "price": 11.99, "product_id": 450, "regular_price": null, "retailer_id": 1, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-29"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 26, "id": 455, "price": 5.99, "product_id": 454, "regular_price": null, "retailer_id": 1, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-29"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 24, "id": 457, "price": 5.49, "product_id": 456, "regular_price": null, "retailer_id": 1, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-29"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 3, "id": 478, "price": 9, "product_id": 477, "regular_price": null, "retailer_id": 1, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-29"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 26, "id": 634, "price": 4.95, "product_id": 633, "regular_price": 5.99, "retailer_id": 5, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-23"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 817, "price": 4.29, "product_id": 815, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 818, "price": 2.99, "product_id": 816, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 823, "price": 3.29, "product_id": 821, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 855, "price": 2.89, "product_id": 853, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 856, "price": 3.19, "product_id": 854, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 29, "id": 1200, "price": 12.98, "product_id": 1196, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 30, "id": 1234, "price": 2.89, "product_id": 1229, "regular_price": null, "retailer_id": 6, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 14, "id": 1247, "price": 13.99, "product_id": 1242, "regular_price": 19.99, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 13, "id": 1249, "price": 4.99, "product_id": 1244, "regular_price": 7.99, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 12, "id": 1253, "price": 3.99, "product_id": 1247, "regular_price": 6.99, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": true, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 11, "id": 1255, "price": 6.99, "product_id": 1249, "regular_price": null, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-20", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": true, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 22, "id": 1256, "price": 4.99, "product_id": 1250, "regular_price": null, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-19", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 25, "id": 1257, "price": 7.99, "product_id": 1251, "regular_price": 13.89, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 24, "id": 1258, "price": 10.99, "product_id": 1252, "regular_price": 21.98, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 26, "id": 1259, "price": 9.99, "product_id": 1253, "regular_price": 17.99, "retailer_id": 2, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-25"}, {"conditions": {"limit_per_person": null, "loyalty_card": false, "max_qty": null, "min_qty": 1}, "flyer_id": 1, "group_id": 1, "id": 1263, "price": 2.39, "product_id": 1257, "regular_price": null, "retailer_id": 3, "store_id": null, "unit": null, "unit_quantity": null, "valid_from": "2026-11-23", "valid_to": "2026-11-28"}], "price_format": "{zl},{gr:02d} zł", "retailers": {"1": "Biedronka", "2": "Lidl", "3": "Netto", "4": "ALDI", "5": "Dino", "6": "Kaufland"}, "text": {"card": "s věrnostní kartou", "coverage": "Pokrytí: {n} z {m}", "empty": "Seznam je prázdný.", "no_offer": "žádná akce", "no_storage": "Prohlížeč neumožňuje ukládání, seznam zmizí po zavření stránky.", "remove": "Odebrat", "sum_full": "Cena celého seznamu", "sum_partial": "Součet známých cen (neúplný, nejde o cenu celého nákupu)"}}</script>
+<script src="https://moszole.github.io/zlotak/planner.js"></script>
+<script src="https://moszole.github.io/zlotak/planner-page.js"></script>
+
+</main>
+<footer>
+<nav aria-label="Informace o webu" id="footer-nav">
+<ul>
+<li><a href="https://moszole.github.io/zlotak/cs/o-nas/">O nás</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/soukromi/">Soukromí</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/podminky/">Podmínky použití</a></li>
+<li><a href="https://moszole.github.io/zlotak/cs/licence/">Licence a zdroje</a></li>
+</ul>
+</nav>
+
+</footer>
+</body>
+</html>
