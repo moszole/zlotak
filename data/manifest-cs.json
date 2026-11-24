@@ -4,10 +4,10 @@
     "min_supported_version_code": 1,
     "store_url": "https://play.google.com/store/apps/details?id=io.github.toszo.zlotak"
   },
-  "catalog_url": "catalog-cs-2026-11-24-c22dd204.json.gz",
-  "checksum": "64d01dcb7c609d5a7e1a86c76aa9513ecefb02e05cd94fb59f29190aff11c933",
+  "catalog_url": "catalog-cs-2026-11-24-7a3253a5.json.gz",
+  "checksum": "588c91938fef872393ae269c05c359ceaa91a0d081a033669e145fa67f824564",
   "edition": "cs",
-  "generated_at": "2026-11-24T09:39:35Z",
-  "latest_version": "2026-11-24-c22dd204",
+  "generated_at": "2026-11-24T11:09:50Z",
+  "latest_version": "2026-11-24-7a3253a5",
   "schema_version": 3
 }
