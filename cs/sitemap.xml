@@ -9,6 +9,7 @@
 <url><loc>https://moszole.github.io/zlotak/cs/biedronka/4/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/biedronka/5/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/biedronka/6/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/biedronka/7/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/dino/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kalendar/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/karty/</loc></url>
@@ -16,11 +17,11 @@
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/chemia/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dom/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dom/2/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/kategorie/dom/3/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/drogeria/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dzieci/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dziecko/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/elektronika/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/kategorie/elektronika/2/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/higiena/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/konserwy/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/mieso/</loc></url>
@@ -45,7 +46,6 @@
 <url><loc>https://moszole.github.io/zlotak/cs/kaufland/4/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kaufland/5/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kaufland/6/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/kaufland/7/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kosik-tydne/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/licence/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/lidl/</loc></url>
@@ -335,8 +335,8 @@
 <url><loc>https://moszole.github.io/zlotak/cs/prakticke-informace/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/banany/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/cebula/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/chleb/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/skupiny/cukier/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/czekolada/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/gruszki/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/herbata/</loc></url>
@@ -344,6 +344,7 @@
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/kapusta/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/kawa/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/kielbasa/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/kurczak/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/maka/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/makaron/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/marchew/</loc></url>
@@ -352,15 +353,17 @@
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/mieso-mielone/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/mleko/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/napoje-gazowane/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/ogorki-kiszone/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/olej/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/papryka/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/piwo/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/skupiny/platki-owsiane/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/skupiny/pomarancze/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/pomidory/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/proszek-do-prania/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/ryz/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/ser-zolty/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/szynka/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/twarog/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/wieprzowina/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/ziemniaki/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/soukromi/</loc></url>
 </urlset>
