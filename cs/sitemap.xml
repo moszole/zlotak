@@ -20,6 +20,7 @@
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dom/3/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/drogeria/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dzieci/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/kategorie/dzieci/2/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/dziecko/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/elektronika/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/kategorie/higiena/</loc></url>
@@ -347,7 +348,6 @@
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/kurczak/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/maka/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/makaron/</loc></url>
-<url><loc>https://moszole.github.io/zlotak/cs/skupiny/marchew/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/margaryna/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/maslo/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/mieso-mielone/</loc></url>
@@ -361,9 +361,11 @@
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/proszek-do-prania/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/ryz/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/ser-zolty/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/sok/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/szynka/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/twarog/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/wieprzowina/</loc></url>
+<url><loc>https://moszole.github.io/zlotak/cs/skupiny/woda/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/skupiny/ziemniaki/</loc></url>
 <url><loc>https://moszole.github.io/zlotak/cs/soukromi/</loc></url>
 </urlset>
